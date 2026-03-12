@@ -1,4 +1,4 @@
-# Local AI Agent — Restaurant Q&A
+# Local AI Agent: Restaurant Q&A
 
 A **fully local** question-answering app for a pizza restaurant. You ask questions in plain English (e.g. *"How are the vegan options?"*), and the app uses a vector database of reviews plus a local LLM to return clear, review-based answers. No cloud APIs required.
 
