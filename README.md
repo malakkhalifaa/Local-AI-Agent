@@ -37,6 +37,17 @@ You can keep asking more questions; type **`q`** to quit.
 
 So: **CSV → embeddings → Chroma → retriever → LLM → answer**. All of this runs on your machine.
 
+### Chroma LangChain DB creation (and all that)
+
+The **Chroma LangChain DB** is the persistent vector database that holds your reviews:
+
+- **Where:** `./chrome_langchain_db` (folder created on first run).
+- **When it’s created:** On first run, `vector.py` reads the CSV, turns each review into a document, embeds it with Ollama, and adds it to Chroma. The DB is saved to disk.
+- **Later runs:** If `chrome_langchain_db` already exists, the script skips re-adding documents and just connects to the existing DB. No re-indexing.
+- **What it stores:** A collection named `"restaurant_reviews"` with embedded text (title + review) and metadata (rating, date). The retriever uses this to find the top 5 reviews that best match each question.
+
+So the Chroma LangChain DB is created once from your CSV, then reused for every question.
+
 ---
 
 ## Setup
