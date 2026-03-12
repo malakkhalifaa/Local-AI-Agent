@@ -1,6 +1,6 @@
 # Local AI Agent: Restaurant Q&A
 
-> Ask questions about a pizza restaurant in plain English—answers from your own review data using a **local** vector DB (Chroma) and LLM (Ollama). **No cloud APIs.**
+> Ask questions about a pizza restaurant in plain English—answers from your own review data using a **local** vector DB (Chroma) and LLM (Ollama). **No cloud APIs.**!!!!!!!!!!
 
 ---
 
