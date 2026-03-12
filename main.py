@@ -15,9 +15,13 @@ Here are some relevant reviews: {reviews}
 
 Here is the question to answer: {question}
 """
-#This is the prompt template that we will use to format our input to the model
-prompt = ChatPromptTemplate.from_template(template)
-chain=prompt | model #This is the chain that we will use to run our model
-
-result=chain.invoke({"reviews": [], "question": "What is the best pizza in town?"})
-print(result)
+while True:
+    print("\n\n-------------------------------")
+    question = input("Ask your question (q to quit): ")
+    print("\n\n")
+    if question == "q":
+        break
+    
+    reviews = retriever.invoke(question)
+    result = chain.invoke({"reviews": reviews, "question": question})
+    print(result)
