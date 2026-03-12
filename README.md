@@ -1,6 +1,5 @@
 # Local AI Agent: Restaurant Q&A
 
-<<<<<<< HEAD
 > Ask questions about a pizza restaurant in plain English—answers from your own review data using a local vector DB (Chroma) and LLM (Ollama). No cloud APIs.
 
 ---
@@ -10,11 +9,8 @@
 This project is a **fully local** question-answering app for a pizza restaurant. You run it on your machine, point it at a CSV of reviews, and then ask questions in plain English (e.g. *"How are the vegan options?"*). The app uses a vector database (Chroma) to find the most relevant reviews and a local LLM (Ollama) to turn them into clear, review-based answers—no cloud APIs or API keys required. Everything runs on your computer.
 
 Below you’ll find what it does, how it works, how to set it up, and how to run it.
-=======
-A **fully local** question-answering app for a pizza restaurant. You ask questions in plain English (e.g. *"How are the vegan options?"*), and the app uses a vector database of reviews plus a local LLM to return clear, review-based answers. No cloud APIs required.
-<img width="3361" height="866" alt="image" src="https://github.com/user-attachments/assets/56ee28a6-a38c-4339-b77e-2a9d2bcba898" />
 
->>>>>>> 22afa756157197fd6e70949a7256040dc70d32b3
+![Screenshot: Q&A in action — asking about vegan options](https://github.com/user-attachments/assets/56ee28a6-a38c-4339-b77e-2a9d2bcba898)
 
 ---
 
